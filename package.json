@@ -1,29 +1,32 @@
 {
-  "name": "andela_project",
-  "version": "1.0.0",
-  "description": "Horizontal MVC folder structure for MEAN APPS",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "snowweb",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "compression": "^1.7.1",
-    "cors": "^2.8.4",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
-    "express-flash": "0.0.2",
-    "express-myconnection": "^1.0.4",
-    "express-session": "^1.15.6",
-    "method-override": "^2.3.10",
-    "morgan": "^1.9.0",
-    "mysql": "^2.15.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Nobsmoke123/"
-  }
+    "name": "andela_project",
+    "version": "4.2.6",
+    "description": "Horizontal MVC folder structure for MEAN APPS",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "snowweb",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "compression": "^1.7.1",
+        "cors": "^2.8.4",
+        "ejs": "^2.5.7",
+        "express": "^4.16.2",
+        "express-flash": "0.0.2",
+        "express-myconnection": "^1.0.4",
+        "express-session": "^1.15.6",
+        "method-override": "^2.3.10",
+        "morgan": "^1.9.0",
+        "mysql": "^2.15.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Nobsmoke123/"
+    },
+    "engines": {
+        "node": "4.2.6"
+    }
 }
