@@ -1,11 +1,11 @@
 {
     "name": "andela_project",
     "version": "4.2.6",
-    "description": "Horizontal MVC folder structure for MEAN APPS",
+    "description": "Andela CRUD project",
     "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js"
+        "start": "node app.js"
     },
     "author": "snowweb",
     "license": "ISC",
