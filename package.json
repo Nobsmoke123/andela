@@ -27,6 +27,7 @@
         "url": "https://github.com/Nobsmoke123/"
     },
     "engines": {
-        "node": "4.2.6"
+        "node": "4.2.6",
+        "npm": "3.5.2"
     }
 }
