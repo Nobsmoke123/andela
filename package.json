@@ -2,7 +2,7 @@
     "name": "andela_project",
     "version": "4.2.6",
     "description": "Horizontal MVC folder structure for MEAN APPS",
-    "main": "server.js",
+    "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js"
