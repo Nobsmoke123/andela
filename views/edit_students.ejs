@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <% include partials/head.ejs %>
+</head>
+
+<body>
+    <% include partials/header.ejs %>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h1 class="teal-text">Edit Students Record</h1>
+                    <form action="/students/save_edit/<%=data[0].id%>" method="POST">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="name" value="<%= data[0].full_name %>">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" value="<%= data[0].email %>">
+                        <div class="row">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-5">
+                                <input type="submit" value="Update" class="btn btn-outline-success">
+                            </div>
+                            <div class="col-sm-3"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+        <div class="block-shift"></div>
+        <% include partials/footer.ejs%>
+            <% include partials/scripts.ejs%>
+</body>
+
+</html>

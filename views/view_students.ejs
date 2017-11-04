@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <% include partials/head.ejs %>
+</head>
+
+<body>
+    <% include partials/header.ejs %>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="teal-text">Students Record</h1>
+                    <table class="table table-responsive table-hover">
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student Email</th>
+                            <th>Date Created</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+
+                        <% if (data.length > 0) { %>
+
+                            <% for(var i = 0; i < data.length; i++) { %>
+                                <tr>
+                                    <td>
+                                        <%= data[i].full_name %>
+                                    </td>
+                                    <td>
+                                        <%= data[i].email %>
+                                    </td>
+                                    <td>
+                                        <%= data[i].date %>
+                                    </td>
+                                    <td>
+                                        <a type="button" href="/students/edit/<%= data[i].id%>" class="btn btn-outline-success waves-effect">Edit</a>
+                                    </td>
+                                    <td>
+                                        <a href="/students/delete/<%= data[i].id%>" class="btn btn-outline-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <%}%>
+                                    <%}%>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="block-fix"> </div>
+        <% include partials/footer.ejs%>
+            <% include partials/scripts.ejs%>
+</body>
+
+</html>

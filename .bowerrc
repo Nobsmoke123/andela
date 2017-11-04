@@ -1,0 +1,4 @@
+/* This denotes the directory you want all your bower installations to go into */
+{
+    "directory": "public/lib"
+}
